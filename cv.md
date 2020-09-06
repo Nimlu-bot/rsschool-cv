@@ -16,6 +16,22 @@ __Nesterov Sergey__
 * Code examples
 
 
+	```
+	var fs = require('fs');
+	let array = [];
+	fs.readFile('users.txt', function (err, data) {
+	if (err) throw err;
+	array = data.toString().split("\r\n");
+
+	for (i in array) {
+		fs.appendFile('output.txt', 'New-Item -Path \"f:\\Обмен\\' + array[i] + '\" -ItemType \"directory\" \r\n', function (err) {
+		if (err) throw err;
+		})s
+	}
+	})
+	```
+
+
  *  Experience
 	* No experience.
 
