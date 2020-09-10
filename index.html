@@ -4,65 +4,115 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML, CSS & Git Basics</title>
+	<link rel="stylesheet" href="style.css" />
+	<title>HTML, CSS & Git Basics - Sergey Nesterov</title>
+
+	<style>
+		body {
+			max-width: 1024px;
+			margin: auto;
+		}
+
+		.header {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.list {
+			display: flex;
+			justify-content: space-around;
+		}
+	</style>
 </head>
 
 
 <body>
 	<div>
-		<header>
-			<img
-				src="https://uploads.hb.cldmail.ru/geekbrains/public/ckeditor_assets/pictures/6933/content-dc09a3cb592ac82b7ce0522a7e7eb882.png"
-				alt="Фото">
-			<ul>
-				<li><a href="#summary">Summary</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#code examples">Code examples</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#english">English</a></li>
-			</ul>
-			</nav>
+		<header class="header">
+			<div class="content">
+				<div class="header__row">
+					<div class="header__body">
+						<div class="header__title"></div>
+						<ul class="header__list">
+							<li><a href="#summary">Summary</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#code examples">Code examples</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#english">English</a></li>
+						</ul>
+						<div class="header__image">
+							<img
+								src="https://uploads.hb.cldmail.ru/geekbrains/public/ckeditor_assets/pictures/6933/content-dc09a3cb592ac82b7ce0522a7e7eb882.png"
+								alt="Фото" height="50px">
+						</div>
+					</div>
+				</div>
+
+
+				</nav>
+			</div>
 		</header>
 		<main>
 			<section class="summary" id="summary">
 				<h2>Summary</h2>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsum optio excepturi illo. Porro, eos! Illo
-				blanditiis alias repellendus modi ducimus porro aspernatur accusamus magni id est veniam, molestiae doloribus
-				numquam voluptas odio maxime illum neque autem. Saepe praesentium, fugiat, temporibus suscipit optio quia odio
-				consequatur eius delectus ea, a repellat necessitatibus molestiae placeat! Assumenda, dolor? Corporis quibusdam,
-				animi dolor architecto, praesentium officia totam incidunt numquam error ut dolorem, maxime iure exercitationem
-				expedita vitae! Culpa ullam nostrum neque explicabo error magnam nam cupiditate? Veritatis soluta magni sit
-				blanditiis hic, ex, autem impedit voluptas cupiditate aut nihil recusandae eius rerum. Magni!
+				I am cheerful and very responsible person. I can easily adapt to any conditions and I am fast learner. I am
+				interested in everything that surrounds me. I like to communicate with new people, like to read and otherwise
+				develop.
+
+
 			</section>
 			<section class="skills" id="skills">
 				<h2>Skills</h2>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam quis non labore animi reiciendis id
-				assumenda placeat quam impedit, deleniti sit deserunt voluptatem dignissimos molestias provident quasi,
-				corrupti, ullam facere. Illo quae id tenetur culpa perferendis magni dolorem veniam possimus vitae ab
-				repudiandae quaerat deleniti quis aliquam quod aspernatur similique, voluptas doloremque nam, aliquid voluptatem
-				soluta eius unde sed! Quidem delectus libero beatae modi alias illo doloremque sint minima eum ea qui quam
-				officia laborum, aspernatur repellat adipisci illum accusantium eius ut eligendi? Asperiores suscipit,
-				voluptates dolores illum quaerat aliquam tempore iste tenetur sequi error debitis facilis ea soluta!
+				<ul>
+					<li>Git</li>
+					<li>bash</li>
+					<li>js</li>
+				</ul>
+
 			</section>
 			<section class="code examples" id="code examples">
 				<h2>Code examples</h2>
+				<code>
+				var fs = require('fs');
+				let array = [];
+				fs.readFile('users.txt', function (err, data) {
+				if (err) throw err;
+				array = data.toString().split("\r\n");
+
+				for (i in array) {
+				fs.appendFile('output.txt', 'New-Item -Path \"f:\\Обмен\\' + array[i] + '\" -ItemType \"directory\" \r\n',
+				function (err) {
+				if (err) throw err;
+				})s
+				}
+				})
+				</code>
+
 			</section>
 			<section class="experience" id="experience">
 				<h2>Experience</h2>
+				No experience.
+
 
 			</section>
 			<section class="education" id="education">
 				<h2>Education</h2>
+				Higher education. Graduated from BSUIR.
+
 			</section>
 			<section class="english" id="english">
 				<h2>English</h2>
 			</section>
-
+			A2, no speaking practice since studying at the university. Reading technical literature without problems.
 		</main>
 		<footer>
 			<section class="contacts">
 				<h2>Contacts</h2>
+				<ul>
+					<li>e-mail snesterov@gmail.com</li>
+					<li>telegram SANesterov</li>
+				</ul>
 			</section>
 		</footer>
 	</div>
