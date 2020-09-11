@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HTML, CSS & Git Basics - Sergey Nesterov</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<header class="header">
+
+		<h1 class="header__title">Sergey Nesterov</h1>
+		<div class="header__image">
+			<img
+				src="https://uploads.hb.cldmail.ru/geekbrains/public/ckeditor_assets/pictures/6933/content-dc09a3cb592ac82b7ce0522a7e7eb882.png"
+				alt="" height="200px">
+		</div>
+
+	</header>
+	<main class="main">
+
+		<section class="main__section">
+			<div class="main__title">Summary</div>
+			<div class="main__text">
+				I am cheerful and very responsible person. I can easily adapt to any conditions and I am fast
+				learner. I am
+				interested in everything that surrounds me. I like to communicate with new people, like to read and
+				otherwise
+				develop.
+			</div>
+		</section>
+		<section class="main__section">
+			<div class="main__title">Skills</div>
+			<div class="main__text">
+				<ul>
+					<li>Git</li>
+					<li>bash</li>
+					<li>js</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="main__section">
+			<div class="main__title">Code examples</div>
+			<div class="main__text">
+				var fs = require('fs');<br>
+				let array = [];<br>
+				fs.readFile('users.txt', function (err, data) {<br>
+				if (err) throw err;<br>
+				array = data.toString().split("\r\n");<br>
+				for (i in array) {<br>
+				fs.appendFile('output.txt', 'New-Item -Path \"f:\\Обмен\\' + array[i] + '\" -ItemType \"directory\" \r\n',
+				function (err) {
+				if (err) throw err;<br>
+				})<br>
+				}<br>
+				})<br>
+			</div>
+		</section>
+		<section class="main__section">
+			<div class="main__title">Experience</div>
+			<div class="main__text">
+				No experience.
+			</div>
+		</section>
+		<section class="main__section">
+			<div class="main__title">Education</div>
+			<div class="main__text">
+				Higher education. Graduated from BSUIR.
+			</div>
+		</section>
+		<section class="main__section">
+			<div class="main__title">English</div>
+			<div class="main__text">
+				A2, no speaking practice since studying at the university. Reading technical literature without problems.
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__text">Telegram - @SANesterov</div>
+		<div class="footer__text">e-mail - snesterov@gmail.com</div>
+		<div class="footer__text">Skype - sanesterov</div>
+	</footer>
+</body>
+
+</html>
